@@ -12,8 +12,9 @@ Example: `order_products = pd.concat([order_products_prior, order_products_train
 
 This is the important one. Seems to function in a similar fashion to a SQL `JOIN`.
 
-Example 1: `merged = pd.merge(subset, order_products[['order_id', 'add_to_cart_order']], how='left', on='order_id')
+Example 1: `merged = pd.merge(subset, order_products[['order_id', 'add_to_cart_order']], how='left', on='order_id')`
 
+```
 Example 2: df = (income
           .merge(lifespan)
           .merge(population)
@@ -28,7 +29,8 @@ Example 2: df = (income
               , 'name': 'country'
               , 'world_4region': 'region4'
               , 'world_6region': 'region6'
-          }))`
+          }))
+```
          
 The above example demonstrates merging, dropping, and renaming in one chain.
 
